@@ -25,8 +25,6 @@ short -> Short
 
 double -> Double
 
-Java Autoboxing and Unboxing with examples
- JAVA TUTORIALS
 Java 1.5 introduced a special feature of auto conversion of primitive types to the corresponding Wrapper class and vice versa.
 
 Autoboxing: Automatic conversion of primitive types to the object of their corresponding wrapper classes is known as autoboxing. For example – conversion of int to Integer, long to Long, double to Double etc.
