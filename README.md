@@ -62,3 +62,22 @@ class AutoboxingExample1
    }
 }
 ```
+Case 2: When at some point of time, you are assigning a primitive type value to an object of its wrapper class. 
+
+For example: The below statements are valid because compiler does the autoboxing at runtime.
+
+```
+Integer inum = 3; //Assigning int to Integer: Autoboxing
+Long lnum = 32L; //Assigning long to Long: Autoboxing
+```
+
+Case 3: When dealing with collection framework classes:
+
+Here ArrayList class is expecting an Integer wrapper class object but we are providing int primitive.
+
+```
+ArrayList<Integer> arrayList = new ArrayList<Integer>();
+arrayList.add(11); //Autoboxing - int primitive to Integer
+arrayList.add(22); //Autoboxing
+```
+
