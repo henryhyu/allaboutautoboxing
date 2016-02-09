@@ -27,6 +27,8 @@ double -> Double
 
 When does the autoboxing and unboxing happens in Java?
 
+Autoboxing
+
 Case 1: When a method is expecting a wrapper class object but the value that is passed as parameter is a primitive type. 
 
 For example in the below code, the method myMethod() is expecting an object of Integer wrapper class, however we passed a primitive int type. The program ran fine as compiler does the autoboxing (conversion of int to Integer)
@@ -63,3 +65,39 @@ arrayList.add(11); //Autoboxing - int primitive to Integer
 arrayList.add(22); //Autoboxing
 ```
 
+Unboxing:
+
+Case 1: Method is expecting Integer object (parameter) but we have supplied int. Auotmatic conversion(unboxing) happened that converted Integer to int.
+
+```
+class UnboxingExample1
+{
+   public static void myMethod(int num){
+	System.out.println(num);
+   }
+   public static void main(String[] args) {
+    	
+    	Integer inum = new Integer(100);
+    	
+        /* passed Integer wrapper class object, it 
+         * would be converted to int primitive type 
+         * at Runtime
+         */
+    	myMethod(inum);
+    }
+}
+```
+
+Case 2: Assignments
+
+```
+Integer inum = new Integer(5);
+int num = inum; //unboxing object to primitive conversion
+```
+
+Case 3: While dealing with collection classes:
+
+```
+ArrayList arrayList = new ArrayList()
+int num = arrayList.get(0); // unboxing because get method returns an Integer object
+```
