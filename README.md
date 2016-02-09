@@ -7,21 +7,21 @@ Autoboxing: Automatic conversion of primitive types to the object of their corre
 
 Unboxing: It is just the reverse process of autoboxing. Automatically converting an object of a wrapper class to its corresponding primitive type is known as unboxing. For example – conversion of Integer to int, Long to long, Double to double etc.
 
-Primitive type	Wrapper class
+Primitive type -> Wrapper class
 
-boolean	        Boolean
+boolean -> Boolean
 
-byte	        Byte
+byte -> Byte
 
-char	        Character
+char -> Character
 
-float	        Float
+float -> Float
 
-int	        Integer
+int -> Integer
 
-long	        Long
+long -> Long
 
-short	        Short
+short -> Short
 
-double	        Double
+double -> Double
 
