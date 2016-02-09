@@ -25,3 +25,40 @@ short -> Short
 
 double -> Double
 
+Java Autoboxing and Unboxing with examples
+ JAVA TUTORIALS
+Java 1.5 introduced a special feature of auto conversion of primitive types to the corresponding Wrapper class and vice versa.
+
+Autoboxing: Automatic conversion of primitive types to the object of their corresponding wrapper classes is known as autoboxing. For example – conversion of int to Integer, long to Long, double to Double etc.
+
+Unboxing: It is just the reverse process of autoboxing. Automatically converting an object of a wrapper class to its corresponding primitive type is known as unboxing. For example – conversion of Integer to int, Long to long, Double to double etc.
+
+Primitive type	Wrapper class
+boolean	        Boolean
+byte	        Byte
+char	        Character
+float	        Float
+int	        Integer
+long	        Long
+short	        Short
+double	        Double
+
+When does the autoboxing and unboxing happens in Java?
+
+Case 1: When a method is expecting a wrapper class object but the value that is passed as parameter is a primitive type. 
+
+For example in the below code, the method myMethod() is expecting an object of Integer wrapper class, however we passed a primitive int type. The program ran fine as compiler does the autoboxing (conversion of int to Integer)
+```
+class AutoboxingExample1
+{
+   public static void myMethod(Integer num){
+	System.out.println(num);
+   }
+   public static void main(String[] args) {
+       /* passed int (primitive type), it would be 
+        * converted to Integer object at Runtime
+        */
+   	myMethod(2);
+   }
+}
+```
